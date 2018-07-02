@@ -16,6 +16,10 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    let activity = configureUserActivity()
+    view.userActivity = activity
+    activity.becomeCurrent()
+    
     UIApplication.shared.isNetworkActivityIndicatorVisible = true
     
     let photoInfoController = PhotoInfoController()
@@ -24,6 +28,18 @@ class ViewController: UIViewController {
         self.updateUI(with: photoInfo)
       }
     }
+  }
+  
+  func configureUserActivity() -> NSUserActivity {
+    let identifier = "peter.minarik.SpacePhoto.photoOfTheDay"
+    let activity = NSUserActivity(activityType: identifier)
+    
+    activity.title = "Photo of the Day"
+    activity.isEligibleForSearch = true
+    activity.isEligibleForPrediction = true
+    activity.persistentIdentifier = NSUserActivityPersistentIdentifier(identifier)
+    
+    return activity
   }
   
   func updateUI(with photoInfo: PhotoInfo) {
