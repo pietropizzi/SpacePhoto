@@ -17,6 +17,13 @@
 		D009503220E8D7DA00983CDD /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503120E8D7DA00983CDD /* PhotoInfo.swift */; };
 		D009503520E8D94E00983CDD /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503420E8D94E00983CDD /* URL+Helpers.swift */; };
 		D009503720E8DA6100983CDD /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503620E8DA6100983CDD /* PhotoInfoController.swift */; };
+		D0BF5C8720EB67EF00BA3AE6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */; };
+		D0BF5C8F20EB696E00BA3AE6 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C8E20EB696E00BA3AE6 /* IntentHandler.swift */; };
+		D0BF5C9820EB696E00BA3AE6 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BF5C9720EB696E00BA3AE6 /* IntentsUI.framework */; };
+		D0BF5C9B20EB696E00BA3AE6 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C9A20EB696E00BA3AE6 /* IntentViewController.swift */; };
+		D0BF5C9E20EB696E00BA3AE6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BF5C9C20EB696E00BA3AE6 /* MainInterface.storyboard */; };
+		D0BF5CA220EB696E00BA3AE6 /* IntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0BF5CA520EB696E00BA3AE6 /* Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +41,36 @@
 			remoteGlobalIDString = D0094FFE20E8D7AF00983CDD;
 			remoteInfo = SpacePhoto;
 		};
+		D0BF5CA020EB696E00BA3AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0094FF720E8D7AF00983CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0BF5C9420EB696E00BA3AE6;
+			remoteInfo = IntentUI;
+		};
+		D0BF5CA320EB696E00BA3AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0094FF720E8D7AF00983CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0BF5C8B20EB696E00BA3AE6;
+			remoteInfo = Intent;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0BF5CAC20EB696E00BA3AE6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0BF5CA520EB696E00BA3AE6 /* Intent.appex in Embed App Extensions */,
+				D0BF5CA220EB696E00BA3AE6 /* IntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D0094FFF20E8D7AF00983CDD /* SpacePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +89,16 @@
 		D009503120E8D7DA00983CDD /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		D009503420E8D94E00983CDD /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
 		D009503620E8DA6100983CDD /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
+		D0BF5C8520EB667800BA3AE6 /* SpacePhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpacePhoto.entitlements; sourceTree = "<group>"; };
+		D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BF5C8E20EB696E00BA3AE6 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D0BF5C9020EB696E00BA3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BF5C9720EB696E00BA3AE6 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		D0BF5C9A20EB696E00BA3AE6 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		D0BF5C9D20EB696E00BA3AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D0BF5C9F20EB696E00BA3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +123,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0BF5C8920EB696E00BA3AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BF5C9220EB696E00BA3AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BF5C9820EB696E00BA3AE6 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +147,9 @@
 				D009500120E8D7AF00983CDD /* SpacePhoto */,
 				D009501620E8D7B100983CDD /* SpacePhotoTests */,
 				D009502120E8D7B100983CDD /* SpacePhotoUITests */,
+				D0BF5C8D20EB696E00BA3AE6 /* Intent */,
+				D0BF5C9920EB696E00BA3AE6 /* IntentUI */,
+				D0BF5C9620EB696E00BA3AE6 /* Frameworks */,
 				D009500020E8D7AF00983CDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +160,8 @@
 				D0094FFF20E8D7AF00983CDD /* SpacePhoto.app */,
 				D009501320E8D7B100983CDD /* SpacePhotoTests.xctest */,
 				D009501E20E8D7B100983CDD /* SpacePhotoUITests.xctest */,
+				D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */,
+				D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +169,7 @@
 		D009500120E8D7AF00983CDD /* SpacePhoto */ = {
 			isa = PBXGroup;
 			children = (
+				D0BF5C8520EB667800BA3AE6 /* SpacePhoto.entitlements */,
 				D009503320E8D93900983CDD /* Helpers */,
 				D009503020E8D7C900983CDD /* Models */,
 				D009500220E8D7AF00983CDD /* AppDelegate.swift */,
@@ -111,6 +178,7 @@
 				D009500920E8D7B000983CDD /* Assets.xcassets */,
 				D009500B20E8D7B000983CDD /* LaunchScreen.storyboard */,
 				D009500E20E8D7B100983CDD /* Info.plist */,
+				D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */,
 			);
 			path = SpacePhoto;
 			sourceTree = "<group>";
@@ -150,6 +218,33 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D0BF5C8D20EB696E00BA3AE6 /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				D0BF5C8E20EB696E00BA3AE6 /* IntentHandler.swift */,
+				D0BF5C9020EB696E00BA3AE6 /* Info.plist */,
+			);
+			path = Intent;
+			sourceTree = "<group>";
+		};
+		D0BF5C9620EB696E00BA3AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0BF5C9720EB696E00BA3AE6 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0BF5C9920EB696E00BA3AE6 /* IntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				D0BF5C9A20EB696E00BA3AE6 /* IntentViewController.swift */,
+				D0BF5C9C20EB696E00BA3AE6 /* MainInterface.storyboard */,
+				D0BF5C9F20EB696E00BA3AE6 /* Info.plist */,
+			);
+			path = IntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,10 +255,13 @@
 				D0094FFB20E8D7AF00983CDD /* Sources */,
 				D0094FFC20E8D7AF00983CDD /* Frameworks */,
 				D0094FFD20E8D7AF00983CDD /* Resources */,
+				D0BF5CAC20EB696E00BA3AE6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0BF5CA120EB696E00BA3AE6 /* PBXTargetDependency */,
+				D0BF5CA420EB696E00BA3AE6 /* PBXTargetDependency */,
 			);
 			name = SpacePhoto;
 			productName = SpacePhoto;
@@ -206,6 +304,40 @@
 			productReference = D009501E20E8D7B100983CDD /* SpacePhotoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D0BF5C8B20EB696E00BA3AE6 /* Intent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BF5CA920EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "Intent" */;
+			buildPhases = (
+				D0BF5C8820EB696E00BA3AE6 /* Sources */,
+				D0BF5C8920EB696E00BA3AE6 /* Frameworks */,
+				D0BF5C8A20EB696E00BA3AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intent;
+			productName = Intent;
+			productReference = D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0BF5C9420EB696E00BA3AE6 /* IntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BF5CA620EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "IntentUI" */;
+			buildPhases = (
+				D0BF5C9120EB696E00BA3AE6 /* Sources */,
+				D0BF5C9220EB696E00BA3AE6 /* Frameworks */,
+				D0BF5C9320EB696E00BA3AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentUI;
+			productName = IntentUI;
+			productReference = D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,6 +350,11 @@
 				TargetAttributes = {
 					D0094FFE20E8D7AF00983CDD = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					D009501220E8D7B100983CDD = {
 						CreatedOnToolsVersion = 10.0;
@@ -226,6 +363,12 @@
 					D009501D20E8D7B100983CDD = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = D0094FFE20E8D7AF00983CDD;
+					};
+					D0BF5C8B20EB696E00BA3AE6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D0BF5C9420EB696E00BA3AE6 = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
@@ -245,6 +388,8 @@
 				D0094FFE20E8D7AF00983CDD /* SpacePhoto */,
 				D009501220E8D7B100983CDD /* SpacePhotoTests */,
 				D009501D20E8D7B100983CDD /* SpacePhotoUITests */,
+				D0BF5C8B20EB696E00BA3AE6 /* Intent */,
+				D0BF5C9420EB696E00BA3AE6 /* IntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +419,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0BF5C8A20EB696E00BA3AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BF5C9320EB696E00BA3AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BF5C9E20EB696E00BA3AE6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BF5C8720EB67EF00BA3AE6 /* Intents.intentdefinition in Sources */,
 				D009503220E8D7DA00983CDD /* PhotoInfo.swift in Sources */,
 				D009503720E8DA6100983CDD /* PhotoInfoController.swift in Sources */,
 				D009503520E8D94E00983CDD /* URL+Helpers.swift in Sources */,
@@ -305,6 +466,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0BF5C8820EB696E00BA3AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BF5C8F20EB696E00BA3AE6 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BF5C9120EB696E00BA3AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BF5C9B20EB696E00BA3AE6 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -317,6 +494,16 @@
 			isa = PBXTargetDependency;
 			target = D0094FFE20E8D7AF00983CDD /* SpacePhoto */;
 			targetProxy = D009501F20E8D7B100983CDD /* PBXContainerItemProxy */;
+		};
+		D0BF5CA120EB696E00BA3AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0BF5C9420EB696E00BA3AE6 /* IntentUI */;
+			targetProxy = D0BF5CA020EB696E00BA3AE6 /* PBXContainerItemProxy */;
+		};
+		D0BF5CA420EB696E00BA3AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0BF5C8B20EB696E00BA3AE6 /* Intent */;
+			targetProxy = D0BF5CA320EB696E00BA3AE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -335,6 +522,14 @@
 				D009500C20E8D7B000983CDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0BF5C9C20EB696E00BA3AE6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0BF5C9D20EB696E00BA3AE6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -457,7 +652,9 @@
 		D009502820E8D7B100983CDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpacePhoto/SpacePhoto.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XR36XXUPD3;
@@ -477,7 +674,9 @@
 		D009502920E8D7B100983CDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpacePhoto/SpacePhoto.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XR36XXUPD3;
@@ -572,6 +771,86 @@
 			};
 			name = Release;
 		};
+		D0BF5CA720EB696E00BA3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XR36XXUPD3;
+				INFOPLIST_FILE = IntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterminarik.SpacePhoto.IntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0BF5CA820EB696E00BA3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XR36XXUPD3;
+				INFOPLIST_FILE = IntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterminarik.SpacePhoto.IntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0BF5CAA20EB696E00BA3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XR36XXUPD3;
+				INFOPLIST_FILE = Intent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterminarik.SpacePhoto.Intent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0BF5CAB20EB696E00BA3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XR36XXUPD3;
+				INFOPLIST_FILE = Intent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterminarik.SpacePhoto.Intent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +886,24 @@
 			buildConfigurations = (
 				D009502E20E8D7B100983CDD /* Debug */,
 				D009502F20E8D7B100983CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BF5CA620EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "IntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BF5CA720EB696E00BA3AE6 /* Debug */,
+				D0BF5CA820EB696E00BA3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BF5CA920EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "Intent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BF5CAA20EB696E00BA3AE6 /* Debug */,
+				D0BF5CAB20EB696E00BA3AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
