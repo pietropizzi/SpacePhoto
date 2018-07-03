@@ -20,16 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
-    guard
-      let nc = window?.rootViewController as? UINavigationController,
-      let vc = storyBoard.instantiateViewController(withIdentifier: "viewController") as? ViewController
-    else {
+    guard let nc = window?.rootViewController as? UINavigationController else {
       return false
     }
     
+    if nc.viewControllers.count > 1 && nc.viewControllers.last is ViewController {
+      return false
+    }
+    
+    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc = storyBoard.instantiateViewController(withIdentifier: "viewController") as! ViewController
     nc.pushViewController(vc, animated: true)
+    
     return true
   }
 
