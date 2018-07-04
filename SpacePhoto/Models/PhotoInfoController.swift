@@ -37,4 +37,16 @@ struct PhotoInfoController {
     task.resume()
   }
   
+  func fetchUrlData(with url: URL, completion: @escaping (Data?) -> Void) {
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+      if let data = data {
+        completion(data)
+      } else {
+        completion(nil)
+      }
+    }
+    
+    task.resume()
+  }
+  
 }

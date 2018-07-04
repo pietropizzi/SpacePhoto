@@ -27,7 +27,15 @@ class ViewController: UIViewController {
   }
   
   func updateUI(with photoInfo: PhotoInfo) {
-    fetchImage(with: photoInfo.url) { (image) in
+    let photoInfoController = PhotoInfoController()
+    photoInfoController.fetchUrlData(with: photoInfo.url) { (data) in
+      guard
+        let data = data,
+        let image = UIImage(data: data)
+      else {
+        return
+      }
+      
       DispatchQueue.main.async {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         
@@ -36,21 +44,6 @@ class ViewController: UIViewController {
       }
       
     }
-  }
-  
-  func fetchImage(with url: URL, completion: @escaping (UIImage?) -> Void) {
-    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-      if
-        let data = data,
-        let image = UIImage(data: data)
-      {
-        completion(image)
-      } else {
-        completion(nil)
-      }
-    }
-   
-    task.resume()
   }
 
 }
