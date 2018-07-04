@@ -17,13 +17,24 @@
 		D009503220E8D7DA00983CDD /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503120E8D7DA00983CDD /* PhotoInfo.swift */; };
 		D009503520E8D94E00983CDD /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503420E8D94E00983CDD /* URL+Helpers.swift */; };
 		D009503720E8DA6100983CDD /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503620E8DA6100983CDD /* PhotoInfoController.swift */; };
+		D0365EB420EBC0500082998B /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BF5C9720EB696E00BA3AE6 /* IntentsUI.framework */; };
+		D0365EB720EBC0500082998B /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0365EB620EBC0500082998B /* IntentViewController.swift */; };
+		D0365EBA20EBC0500082998B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0365EB820EBC0500082998B /* MainInterface.storyboard */; };
+		D0365EBE20EBC0500082998B /* IntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0365EB320EBC0500082998B /* IntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0365EC220EBC28A0082998B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */; };
+		D0365EC320EBC6C00082998B /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503620E8DA6100983CDD /* PhotoInfoController.swift */; };
+		D0365EC420EBC6C60082998B /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503120E8D7DA00983CDD /* PhotoInfo.swift */; };
+		D0365EC520EBC6C90082998B /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503420E8D94E00983CDD /* URL+Helpers.swift */; };
+		D0BD583A20EBD3A800CD17EA /* PhotoOfTheDayIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5CC520EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift */; };
 		D0BF5C8720EB67EF00BA3AE6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */; };
 		D0BF5C8F20EB696E00BA3AE6 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C8E20EB696E00BA3AE6 /* IntentHandler.swift */; };
-		D0BF5C9820EB696E00BA3AE6 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BF5C9720EB696E00BA3AE6 /* IntentsUI.framework */; };
-		D0BF5C9B20EB696E00BA3AE6 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C9A20EB696E00BA3AE6 /* IntentViewController.swift */; };
-		D0BF5C9E20EB696E00BA3AE6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BF5C9C20EB696E00BA3AE6 /* MainInterface.storyboard */; };
-		D0BF5CA220EB696E00BA3AE6 /* IntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D0BF5CA520EB696E00BA3AE6 /* Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0BF5CC320EB72D700BA3AE6 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */; };
+		D0BF5CC620EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5CC520EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift */; };
+		D0BF5CC720EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF5CC520EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift */; };
+		D0BF5CC820EB776100BA3AE6 /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503620E8DA6100983CDD /* PhotoInfoController.swift */; };
+		D0BF5CC920EB779B00BA3AE6 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503120E8D7DA00983CDD /* PhotoInfo.swift */; };
+		D0BF5CCA20EB77AF00BA3AE6 /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009503420E8D94E00983CDD /* URL+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +52,11 @@
 			remoteGlobalIDString = D0094FFE20E8D7AF00983CDD;
 			remoteInfo = SpacePhoto;
 		};
-		D0BF5CA020EB696E00BA3AE6 /* PBXContainerItemProxy */ = {
+		D0365EBC20EBC0500082998B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0094FF720E8D7AF00983CDD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D0BF5C9420EB696E00BA3AE6;
+			remoteGlobalIDString = D0365EB220EBC0500082998B;
 			remoteInfo = IntentUI;
 		};
 		D0BF5CA320EB696E00BA3AE6 /* PBXContainerItemProxy */ = {
@@ -64,8 +75,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				D0365EBE20EBC0500082998B /* IntentUI.appex in Embed App Extensions */,
 				D0BF5CA520EB696E00BA3AE6 /* Intent.appex in Embed App Extensions */,
-				D0BF5CA220EB696E00BA3AE6 /* IntentUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,16 +100,17 @@
 		D009503120E8D7DA00983CDD /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		D009503420E8D94E00983CDD /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
 		D009503620E8DA6100983CDD /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
+		D0365EB320EBC0500082998B /* IntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0365EB620EBC0500082998B /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		D0365EB920EBC0500082998B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D0365EBB20EBC0500082998B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BF5C8520EB667800BA3AE6 /* SpacePhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpacePhoto.entitlements; sourceTree = "<group>"; };
 		D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BF5C8E20EB696E00BA3AE6 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		D0BF5C9020EB696E00BA3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BF5C9720EB696E00BA3AE6 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		D0BF5C9A20EB696E00BA3AE6 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		D0BF5C9D20EB696E00BA3AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		D0BF5C9F20EB696E00BA3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BF5CC520EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTheDayIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,18 +135,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0365EB020EBC0500082998B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0365EB420EBC0500082998B /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0BF5C8920EB696E00BA3AE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0BF5C9220EB696E00BA3AE6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0BF5C9820EB696E00BA3AE6 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +160,7 @@
 				D009501620E8D7B100983CDD /* SpacePhotoTests */,
 				D009502120E8D7B100983CDD /* SpacePhotoUITests */,
 				D0BF5C8D20EB696E00BA3AE6 /* Intent */,
-				D0BF5C9920EB696E00BA3AE6 /* IntentUI */,
+				D0365EB520EBC0500082998B /* IntentUI */,
 				D0BF5C9620EB696E00BA3AE6 /* Frameworks */,
 				D009500020E8D7AF00983CDD /* Products */,
 			);
@@ -161,7 +173,7 @@
 				D009501320E8D7B100983CDD /* SpacePhotoTests.xctest */,
 				D009501E20E8D7B100983CDD /* SpacePhotoUITests.xctest */,
 				D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */,
-				D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */,
+				D0365EB320EBC0500082998B /* IntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +191,7 @@
 				D009500B20E8D7B000983CDD /* LaunchScreen.storyboard */,
 				D009500E20E8D7B100983CDD /* Info.plist */,
 				D0BF5C8620EB67EF00BA3AE6 /* Intents.intentdefinition */,
+				D0BF5CC520EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift */,
 			);
 			path = SpacePhoto;
 			sourceTree = "<group>";
@@ -218,6 +231,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D0365EB520EBC0500082998B /* IntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				D0365EB620EBC0500082998B /* IntentViewController.swift */,
+				D0365EB820EBC0500082998B /* MainInterface.storyboard */,
+				D0365EBB20EBC0500082998B /* Info.plist */,
+			);
+			path = IntentUI;
+			sourceTree = "<group>";
+		};
 		D0BF5C8D20EB696E00BA3AE6 /* Intent */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,16 +258,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D0BF5C9920EB696E00BA3AE6 /* IntentUI */ = {
-			isa = PBXGroup;
-			children = (
-				D0BF5C9A20EB696E00BA3AE6 /* IntentViewController.swift */,
-				D0BF5C9C20EB696E00BA3AE6 /* MainInterface.storyboard */,
-				D0BF5C9F20EB696E00BA3AE6 /* Info.plist */,
-			);
-			path = IntentUI;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,8 +273,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0BF5CA120EB696E00BA3AE6 /* PBXTargetDependency */,
 				D0BF5CA420EB696E00BA3AE6 /* PBXTargetDependency */,
+				D0365EBD20EBC0500082998B /* PBXTargetDependency */,
 			);
 			name = SpacePhoto;
 			productName = SpacePhoto;
@@ -304,6 +317,23 @@
 			productReference = D009501E20E8D7B100983CDD /* SpacePhotoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D0365EB220EBC0500082998B /* IntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0365EBF20EBC0500082998B /* Build configuration list for PBXNativeTarget "IntentUI" */;
+			buildPhases = (
+				D0365EAF20EBC0500082998B /* Sources */,
+				D0365EB020EBC0500082998B /* Frameworks */,
+				D0365EB120EBC0500082998B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentUI;
+			productName = IntentUI;
+			productReference = D0365EB320EBC0500082998B /* IntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D0BF5C8B20EB696E00BA3AE6 /* Intent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0BF5CA920EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "Intent" */;
@@ -319,23 +349,6 @@
 			name = Intent;
 			productName = Intent;
 			productReference = D0BF5C8C20EB696E00BA3AE6 /* Intent.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		D0BF5C9420EB696E00BA3AE6 /* IntentUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0BF5CA620EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "IntentUI" */;
-			buildPhases = (
-				D0BF5C9120EB696E00BA3AE6 /* Sources */,
-				D0BF5C9220EB696E00BA3AE6 /* Frameworks */,
-				D0BF5C9320EB696E00BA3AE6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IntentUI;
-			productName = IntentUI;
-			productReference = D0BF5C9520EB696E00BA3AE6 /* IntentUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -364,10 +377,10 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = D0094FFE20E8D7AF00983CDD;
 					};
-					D0BF5C8B20EB696E00BA3AE6 = {
+					D0365EB220EBC0500082998B = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					D0BF5C9420EB696E00BA3AE6 = {
+					D0BF5C8B20EB696E00BA3AE6 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -389,7 +402,7 @@
 				D009501220E8D7B100983CDD /* SpacePhotoTests */,
 				D009501D20E8D7B100983CDD /* SpacePhotoUITests */,
 				D0BF5C8B20EB696E00BA3AE6 /* Intent */,
-				D0BF5C9420EB696E00BA3AE6 /* IntentUI */,
+				D0365EB220EBC0500082998B /* IntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -419,18 +432,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0365EB120EBC0500082998B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0365EBA20EBC0500082998B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0BF5C8A20EB696E00BA3AE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0BF5C9320EB696E00BA3AE6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0BF5C9E20EB696E00BA3AE6 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BF5C8720EB67EF00BA3AE6 /* Intents.intentdefinition in Sources */,
+				D0BF5CC620EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift in Sources */,
 				D009503220E8D7DA00983CDD /* PhotoInfo.swift in Sources */,
 				D009503720E8DA6100983CDD /* PhotoInfoController.swift in Sources */,
 				D009503520E8D94E00983CDD /* URL+Helpers.swift in Sources */,
@@ -466,19 +480,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0365EAF20EBC0500082998B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0365EC420EBC6C60082998B /* PhotoInfo.swift in Sources */,
+				D0365EC520EBC6C90082998B /* URL+Helpers.swift in Sources */,
+				D0365EC220EBC28A0082998B /* Intents.intentdefinition in Sources */,
+				D0365EB720EBC0500082998B /* IntentViewController.swift in Sources */,
+				D0BD583A20EBD3A800CD17EA /* PhotoOfTheDayIntentHandler.swift in Sources */,
+				D0365EC320EBC6C00082998B /* PhotoInfoController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0BF5C8820EB696E00BA3AE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BF5CC320EB72D700BA3AE6 /* Intents.intentdefinition in Sources */,
+				D0BF5CCA20EB77AF00BA3AE6 /* URL+Helpers.swift in Sources */,
+				D0BF5CC720EB755700BA3AE6 /* PhotoOfTheDayIntentHandler.swift in Sources */,
+				D0BF5CC820EB776100BA3AE6 /* PhotoInfoController.swift in Sources */,
 				D0BF5C8F20EB696E00BA3AE6 /* IntentHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0BF5C9120EB696E00BA3AE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0BF5C9B20EB696E00BA3AE6 /* IntentViewController.swift in Sources */,
+				D0BF5CC920EB779B00BA3AE6 /* PhotoInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,10 +519,10 @@
 			target = D0094FFE20E8D7AF00983CDD /* SpacePhoto */;
 			targetProxy = D009501F20E8D7B100983CDD /* PBXContainerItemProxy */;
 		};
-		D0BF5CA120EB696E00BA3AE6 /* PBXTargetDependency */ = {
+		D0365EBD20EBC0500082998B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D0BF5C9420EB696E00BA3AE6 /* IntentUI */;
-			targetProxy = D0BF5CA020EB696E00BA3AE6 /* PBXContainerItemProxy */;
+			target = D0365EB220EBC0500082998B /* IntentUI */;
+			targetProxy = D0365EBC20EBC0500082998B /* PBXContainerItemProxy */;
 		};
 		D0BF5CA420EB696E00BA3AE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -524,10 +548,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		D0BF5C9C20EB696E00BA3AE6 /* MainInterface.storyboard */ = {
+		D0365EB820EBC0500082998B /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D0BF5C9D20EB696E00BA3AE6 /* Base */,
+				D0365EB920EBC0500082998B /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -771,7 +795,7 @@
 			};
 			name = Release;
 		};
-		D0BF5CA720EB696E00BA3AE6 /* Debug */ = {
+		D0365EC020EBC0500082998B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -791,7 +815,7 @@
 			};
 			name = Debug;
 		};
-		D0BF5CA820EB696E00BA3AE6 /* Release */ = {
+		D0365EC120EBC0500082998B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -890,11 +914,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0BF5CA620EB696E00BA3AE6 /* Build configuration list for PBXNativeTarget "IntentUI" */ = {
+		D0365EBF20EBC0500082998B /* Build configuration list for PBXNativeTarget "IntentUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0BF5CA720EB696E00BA3AE6 /* Debug */,
-				D0BF5CA820EB696E00BA3AE6 /* Release */,
+				D0365EC020EBC0500082998B /* Debug */,
+				D0365EC120EBC0500082998B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

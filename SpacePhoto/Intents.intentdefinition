@@ -9,7 +9,7 @@
 	<key>INIntentDefinitionSystemVersion</key>
 	<string>17F77</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>10L176w</string>
+	<string>10L177m</string>
 	<key>INIntentDefinitionToolsVersion</key>
 	<string>10.0</string>
 	<key>INIntents</key>
@@ -22,7 +22,7 @@
 			<key>INIntentDescriptionID</key>
 			<string>p66QJS</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>1</integer>
+			<integer>3</integer>
 			<key>INIntentName</key>
 			<string>PhotoOfTheDay</string>
 			<key>INIntentParameterCombinations</key>
@@ -61,7 +61,7 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>What a lovely view</string>
+						<string>Today's photo of the day shows ${photoTitle}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>06v0ef</string>
 						<key>INIntentResponseCodeName</key>
@@ -69,11 +69,34 @@
 						<key>INIntentResponseCodeSuccess</key>
 						<true/>
 					</dict>
+					<dict>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Unfortuneately there is not photo today</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>hDh4Hn</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failureNoImage</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<false/>
+					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>0</integer>
+				<integer>3</integer>
 				<key>INIntentResponseParameters</key>
-				<array/>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>photoTitle</string>
+						<key>INIntentResponseParameterSupportsMultipleValues</key>
+						<false/>
+						<key>INIntentResponseParameterTag</key>
+						<integer>3</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+				</array>
 			</dict>
 			<key>INIntentRestrictions</key>
 			<integer>0</integer>

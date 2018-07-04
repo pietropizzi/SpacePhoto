@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Intents
+import os.log
 
 class ViewController: UIViewController {
   
@@ -24,10 +26,38 @@ class ViewController: UIViewController {
         self.updateUI(with: photoInfo)
       }
     }
+    
+    donateIntent()
+  }
+  
+  func donateIntent() {
+    let intent = PhotoOfTheDayIntent()
+    
+    intent.suggestedInvocationPhrase = "Outer space"
+    
+    let interaction = INInteraction(intent: intent, response: nil)
+    
+    interaction.donate { (error) in
+      if error != nil {
+        if let error = error as NSError? {
+          os_log("Interaction donation failed: %@", log: OSLog.default, type: .error, error)
+        } else {
+          os_log("Successfully donated interaction")
+        }
+      }
+    }
   }
   
   func updateUI(with photoInfo: PhotoInfo) {
-    fetchImage(with: photoInfo.url) { (image) in
+    let photoInfoController = PhotoInfoController()
+    photoInfoController.fetchImageData(with: photoInfo.url) { (data) in
+      guard
+        let data = data,
+        let image = UIImage(data: data)
+      else {
+        return
+      }
+      
       DispatchQueue.main.async {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         
@@ -36,21 +66,6 @@ class ViewController: UIViewController {
       }
       
     }
-  }
-  
-  func fetchImage(with url: URL, completion: @escaping (UIImage?) -> Void) {
-    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-      if
-        let data = data,
-        let image = UIImage(data: data)
-      {
-        completion(image)
-      } else {
-        completion(nil)
-      }
-    }
-   
-    task.resume()
   }
 
 }

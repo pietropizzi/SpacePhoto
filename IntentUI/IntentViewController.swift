@@ -16,22 +16,51 @@ import IntentsUI
 // "Send a message using <myApp>"
 
 class IntentViewController: UIViewController, INUIHostedViewControlling {
+  
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  // MARK: - INUIHostedViewControlling
+  
+  // Prepare your view controller for the interaction to handle.
+  func configureView(for parameters: Set<INParameter>,
+                     of interaction: INInteraction,
+                     interactiveBehavior: INUIInteractiveBehavior,
+                     context: INUIHostedViewContext,
+                     completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    guard interaction.intent is PhotoOfTheDayIntent else {
+      completion(false, Set(), .zero)
+      return
     }
-        
-    // MARK: - INUIHostedViewControlling
     
-    // Prepare your view controller for the interaction to handle.
-    func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
-        // Do configuration here, including preparing views and calculating a desired size for presentation.
-        completion(true, parameters, self.desiredSize)
+    let width = self.extensionContext?.hostedViewMaximumAllowedSize.width ?? 320
+    let desiredSize = CGSize(width: width, height: 300)
+    
+    activityIndicator.startAnimating()
+    
+    let photoInfoController = PhotoInfoController()
+    photoInfoController.fetchPhotoOfTheDay { (photoInfo) in
+      if let photoInfo = photoInfo {
+        photoInfoController.fetchImageData(with: photoInfo.url) { [weak self] (data) in
+          if let data = data {
+            let image = UIImage(data: data)!
+            
+            DispatchQueue.main.async {
+              self?.imageView.image = image
+              self?.activityIndicator.stopAnimating()
+              self?.activityIndicator.isHidden = true
+            }
+          }
+        }
+      }
     }
     
-    var desiredSize: CGSize {
-        return self.extensionContext!.hostedViewMaximumAllowedSize
-    }
-    
+    completion(true, parameters, desiredSize)
+  }
+  
 }

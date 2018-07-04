@@ -16,6 +16,20 @@ struct PhotoInfoController {
     "api_key": "DEMO_KEY"
   ]
   
+  func fetchImageData(with url: URL, completion: @escaping (Data?) -> Void) {
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+      if
+        let data = data
+      {
+        completion(data)
+      } else {
+        completion(nil)
+      }
+    }
+    
+    task.resume()
+  }
+  
   func fetchPhotoOfTheDay(completion: @escaping (PhotoInfo?) -> Void) {
     let url = baseURL
       .appendingPathComponent("planetary")

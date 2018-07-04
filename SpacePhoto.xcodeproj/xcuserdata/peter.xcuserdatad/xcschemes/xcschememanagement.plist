@@ -7,7 +7,7 @@
 		<key>Intent.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>IntentUI.xcscheme</key>
 		<dict>
@@ -17,7 +17,40 @@
 		<key>SpacePhoto.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D0094FFE20E8D7AF00983CDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D009501220E8D7B100983CDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D009501D20E8D7B100983CDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0365EB220EBC0500082998B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0BF5C8B20EB696E00BA3AE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0BF5C9420EB696E00BA3AE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
