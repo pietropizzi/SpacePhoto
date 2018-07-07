@@ -18,6 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     return true
   }
+  
+  func application(_ application: UIApplication,
+                   continue userActivity: NSUserActivity,
+                   restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+    guard
+      userActivity.interaction?.intent is PhotoOfTheDayIntent,
+      let window = window,
+      let rootViewController = window.rootViewController as? UINavigationController
+    else {
+      return false
+    }
+    
+    if rootViewController.viewControllers.count > 1 && rootViewController.viewControllers.last is ViewController {
+      return false
+    }
+    
+    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc = storyBoard.instantiateViewController(withIdentifier: "viewController") as! ViewController
+    rootViewController.pushViewController(vc, animated: true)
+    
+    return true
+  }
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -7,7 +7,45 @@
 		<key>SpacePhoto.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SpacePhotoIntent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SpacePhotoIntentUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D0094FFE20E8D7AF00983CDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D009501220E8D7B100983CDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D009501D20E8D7B100983CDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0A8E70920ED120F00DCBBA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0A8E71220ED120F00DCBBA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

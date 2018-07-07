@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Intents
+import os.log
 
 class ViewController: UIViewController {
   
@@ -22,6 +24,26 @@ class ViewController: UIViewController {
     photoInfoController.fetchPhotoOfTheDay { (photoInfo) in
       if let photoInfo = photoInfo {
         self.updateUI(with: photoInfo)
+      }
+    }
+    
+    donateInteraction()
+  }
+  
+  func donateInteraction() {
+    let intent = PhotoOfTheDayIntent()
+    
+    intent.suggestedInvocationPhrase = "Energize"
+    
+    let interaction = INInteraction(intent: intent, response: nil)
+    
+    interaction.donate { (error) in
+      if error != nil {
+        if let error = error as NSError? {
+          os_log("Interaction donation failed: %@", log: OSLog.default, type: .error, error)
+        } else {
+          os_log("Successfully donated interaction")
+        }
       }
     }
   }
